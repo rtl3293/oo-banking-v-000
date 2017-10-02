@@ -35,6 +35,7 @@ class Transfer
     if self.status == 'executed'
       receiver.balance = receiver.balance - @amount
       sender.balance += sender.balance
+      
   end
 
 
