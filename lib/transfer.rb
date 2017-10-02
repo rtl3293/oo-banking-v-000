@@ -33,9 +33,9 @@ class Transfer
 
   def reverse_transfer
     if self.status == 'executed'
-      Transfer.new(@receiver, @sender, @amount)
+      receiver.balance = receiver.balance - @amount
   end
-    
+
 
 
 end
