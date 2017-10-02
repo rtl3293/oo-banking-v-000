@@ -36,6 +36,7 @@ class Transfer
       #binding.pry
       receiver.balance = receiver.balance - @amount
       sender.balance += @amount
+      self.status = 'reveresed'
     end
 
   end
