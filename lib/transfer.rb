@@ -35,7 +35,7 @@ class Transfer
     if self.status == 'complete'
       binding.pry
       receiver.balance = receiver.balance - @amount
-      sender.balance += sender.balance
+      sender.balance += @amount
     end
 
   end
